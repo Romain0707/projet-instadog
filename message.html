@@ -32,10 +32,10 @@
     </header>
 
     <main>
-        <div class="w-full max-w-[1080px] my-0 mx-auto py-0 px-5 md:flex md:justify-center md:gap-6 ">
-            <div class="border border-gray-300 rounded-t-xl mt-8">
+        <div class="w-full max-w-[1080px] my-0 mx-auto py-0 px-5 mb-14 md:flex md:h-[80vh]">
+            <div class="border border-gray-300 rounded-t-xl mt-8 md:rounded-t-none md:rounded-l-xl md:w-96">
                 <div class="border-b border-gray-300">
-                    <h2 class="text-2xl font-semibold m-4">Messages</h2>
+                    <h2 class="text-2xl font-semibold m-4 md:my-6">Messages</h2>
                 </div>
                 <div class="flex justify-between p-4 border-b border-gray-200">
                     <div class="flex items-center gap-4">
@@ -74,8 +74,8 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="flex justify-between p-4 border-x border-b border-gray-300">
+            <div class="border-x md:border-x-0 border-b border-gray-300 rounded-b-xl md:rounded-br-xl md:mt-8 md:border-t md:border-r md:rounded-b-none md:rounded-r-xl md:w-full md:flex md:flex-col">
+                <div class="flex justify-between p-4 border-b border-gray-300">
                     <div class="flex items-center gap-4">
                         <div class="size-[50px] rounded-[50%] overflow-hidden">
                             <img src="assets/img/dog-1.jpg" alt="" class="w-full h-full object-cover object-center rounded-[50%]">
@@ -89,15 +89,56 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info-icon lucide-info"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
                     </div>
                 </div>
-                <div class="">
-
+                <div class=" border-b border-gray-300 bg-slate-50 p-4 basis-full">
+                    <div class="mb-4">
+                        <div class="flex gap-4">
+                            <div class="size-[40px] rounded-[50%] overflow-hidden">
+                                <img src="assets/img/dog-1.jpg" alt="" class="w-full h-full object-cover object-center rounded-[50%]">
+                            </div>
+                            <div class="bg-white border border-gray-300 rounded-b-xl rounded-tr-xl px-4 py-2 max-w-2/3">
+                                <p>Hello ! Prêt pour la balade ?</p>
+                                <p class="opacity-50">14:12</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-end pl-13 mb-4">
+                        <div class="flex gap-4">
+                            <div class="bg-blue-500 text-white rounded-b-xl rounded-tl-xl px-4 py-2 flex-1">
+                                <p>Toujours ! On se retrouve au parc.</p>
+                                <p class="opacity-50">14:13 • Vu</p>
+                            </div>
+                            <div class="size-[40px] rounded-[50%] overflow-hidden basis-10">
+                                <img src="assets/img/profil.jpg" alt="" class="w-full h-full object-cover object-center rounded-[50%]">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex gap-4">
+                            <div class="size-[40px] rounded-[50%] overflow-hidden">
+                                <img src="assets/img/dog-1.jpg" alt="" class="w-full h-full object-cover object-center rounded-[50%]">
+                            </div>
+                            <div class="bg-white border border-gray-300 rounded-b-xl rounded-tr-xl px-4 py-2 max-w-2/3">
+                                <p>Parfait, j'apporte les friandises !</p>
+                                <p class="opacity-50">14:15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 p-4">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image-icon lucide-image"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                    </div>
+                    <form class="flex gap-2 basis-full">
+                        <input type="text" placeholder="Message..." class="appearance-none w-full border border-gray-300 rounded-full p-2 pl-4 justify-self-stretch">
+                        <input type="submit" value="Envoyer" class="appearance-none bg-blue-500 text-white py-2 rounded-full px-4 font-semibold">
+                    </form>
                 </div>
             </div>
         </div>
     </main>
 
     <footer class="pt-4 pb-12">
-        <div class="w-full max-w-[1080px] my-0 mx-auto py-0 px-5">
+        <div class="w-full max-w-[1080px] my-0 mx-auto py-0 px-5 md:flex md:gap-4">
             <ul class="flex gap-6 opacity-50 pb-2">
                 <li><a href="">À propos</a></li>
                 <li><a href="">Aide</a></li>
@@ -106,7 +147,6 @@
                 <li><a href="">Carrières</a></li>
             </ul>
             <p class="opacity-50">© 2025 Instadog</p>
-
         </div>
     </footer>
     
