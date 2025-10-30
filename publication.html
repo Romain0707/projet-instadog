@@ -38,14 +38,13 @@
                     <p class="font-semibold text-2xl m-4">Créer une publication</p>
                 </div>
                 <div>
-
                     <form action="" class="mx-8 flex flex-col ">
                         <label for="image" class="border-2 border-dashed border-gray-300 my-8 rounded-xl flex flex-col justify-center items-center py-8 text-center cursor-pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image-plus-icon lucide-image-plus"><path d="M16 5h6"/><path d="M19 2v6"/><path d="M21 11.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7.5"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/><circle cx="9" cy="9" r="2"/></svg>
                             <p><span class="text-indigo-500 font-semibold">Téléverser une photo</span> <span  class="opacity-70">ou glissez-déposez</span></p>
                             <p class="opacity-50">PNG, JPG, GIF jusqu'à 10MB</p>
                         </label>
-                        <input type="image" id="image" class="hidden">
+                        <input type="file" id="image" class="hidden">
                         <label for="legende" class="text-semibold mb-1">Légende</label>
                         <textarea name="legende" id="legende" placeholder="Ajoutez une légende..." class="appearance-none border border-gray-200 rounded-lg p-4 min-h-28"></textarea>
                         <label for="legende" class="opacity-50 mt-2">Décrivez votre photo avec des mots-clés et des hashtags comme #chien #adoption #bienaimé</label>
